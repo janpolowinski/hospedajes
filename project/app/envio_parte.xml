@@ -1,0 +1,146 @@
+<ns2:peticion xmlns:ns2="http://www.neg.hospedajes.mir.es/altaParteHospedaje">
+    <solicitud>
+        <codigoEstablecimiento>0000000107</codigoEstablecimiento>
+        
+        <comunicacion>
+            <contrato>
+                <referencia>123456789</referencia>
+                <fechaContrato>2020-01-01</fechaContrato>
+                <fechaEntrada>2020-01-01T00:00:00</fechaEntrada>
+                <fechaSalida>2020-01-01T00:00:00</fechaSalida>
+                <numPersonas>2</numPersonas>
+                
+                
+                <pago>
+                    <tipoPago>TARJT</tipoPago>
+                    
+                    
+                    
+                    
+                </pago>
+            </contrato>
+             
+            <persona>
+                <rol>TI</rol>
+                <nombre>Juan</nombre>
+                <apellido1>Sin Miedo</apellido1>
+                <apellido2>Rodrígez</apellido2>
+                <tipoDocumento>NIF</tipoDocumento>
+                <numeroDocumento>12345678Z</numeroDocumento>
+                <soporteDocumento>123</soporteDocumento>
+                <fechaNacimiento>1980-01-01</fechaNacimiento>
+                <nacionalidad>ESP</nacionalidad>
+                
+                <direccion>
+                    <direccion>Calle Falsa 123</direccion>
+                    
+                    
+                    <nombreMunicipio>Matalascañas</nombreMunicipio>
+                    <codigoPostal>28001</codigoPostal>
+                    <pais>ESP</pais>
+                </direccion>
+                <telefono>234545</telefono>
+                
+                
+                
+            </persona>
+             
+            <persona>
+                <rol>VI</rol>
+                <nombre>María De Los Remedios</nombre>
+                <apellido1>García Herrera</apellido1>
+                <apellido2>Nmartínez</apellido2>
+                <tipoDocumento>NIF</tipoDocumento>
+                <numeroDocumento>58219929Y</numeroDocumento>
+                <soporteDocumento>123</soporteDocumento>
+                <fechaNacimiento>1980-01-01</fechaNacimiento>
+                <nacionalidad>ESP</nacionalidad>
+                
+                <direccion>
+                    <direccion>Calle Falsa 123</direccion>
+                    
+                    
+                    <nombreMunicipio>Matalascañas</nombreMunicipio>
+                    <codigoPostal>28001</codigoPostal>
+                    <pais>ESP</pais>
+                </direccion>
+                <telefono>949857857</telefono>
+                
+                <correo>falso@falso.com</correo>
+                
+            </persona>
+             
+        </comunicacion>
+        
+        <comunicacion>
+            <contrato>
+                <referencia>xxx789</referencia>
+                <fechaContrato>2020-01-01</fechaContrato>
+                <fechaEntrada>2020-01-01T00:00:00</fechaEntrada>
+                <fechaSalida>2020-01-01T00:00:00</fechaSalida>
+                <numPersonas>2</numPersonas>
+                
+                
+                <pago>
+                    <tipoPago>TARJT</tipoPago>
+                    
+                    
+                    
+                    
+                </pago>
+            </contrato>
+             
+            <persona>
+                <rol>TI</rol>
+                <nombre>Juan</nombre>
+                <apellido1>Sin Miedo</apellido1>
+                
+                <tipoDocumento>PAS</tipoDocumento>
+                <numeroDocumento>86538575V</numeroDocumento>
+                <soporteDocumento>123</soporteDocumento>
+                <fechaNacimiento>1980-01-01</fechaNacimiento>
+                <nacionalidad>ESP</nacionalidad>
+                
+                <direccion>
+                    <direccion>Calle Falsa 123</direccion>
+                    
+                    
+                    <nombreMunicipio>Matalascañas</nombreMunicipio>
+                    <codigoPostal>28001</codigoPostal>
+                    <pais>ESP</pais>
+                </direccion>
+                <telefono>234545</telefono>
+                
+                
+                
+            </persona>
+             
+            <persona>
+                <rol>VI</rol>
+                <nombre>María De Los Remedios</nombre>
+                <apellido1>García Herrera</apellido1>
+                
+                <tipoDocumento>PAS</tipoDocumento>
+                <numeroDocumento>58219929Y</numeroDocumento>
+                <soporteDocumento>123</soporteDocumento>
+                <fechaNacimiento>1980-01-01</fechaNacimiento>
+                <nacionalidad>ESP</nacionalidad>
+                
+                <direccion>
+                    <direccion>Calle Falsa 123</direccion>
+                    
+                    
+                    <nombreMunicipio>Matalascañas</nombreMunicipio>
+                    <codigoPostal>28001</codigoPostal>
+                    <pais>ESP</pais>
+                </direccion>
+                <telefono>949857857</telefono>
+                
+                <correo>falso@falso.com</correo>
+                
+            </persona>
+             
+        </comunicacion>
+         
+    </solicitud>
+</ns2:peticion>

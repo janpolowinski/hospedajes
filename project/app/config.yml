@@ -1,0 +1,31 @@
+
+# version de la interfaz del servicio 
+version: &ver 3.0.0
+
+# el entorno puede ser pruebas o produccion
+entorno: pruebas
+
+conexiones:
+  pruebas:
+    url: https://hospedajes.pre-ses.mir.es/hospedajes-web/ws/v1/comunicacion
+    usuario: XXXXX
+    password: Temporal1
+    arrendador: "0000000xxx"
+    establecimiento: "0000000xxx"
+    aplicacion: pruebas de reservas y partes
+  produccion:
+    url: https://hospedajes.ses.mir.es/hospedajes-web/ws/v1/comunicacion
+    usuario: usuario
+    password: password
+    arrendador: arrendador
+    establecimiento: establecimiento
+    aplicacion: mega-PMS
+
+
+fic_municipios: municipios-ine-2023.csv
+fic_codigos_postales: codigos-postales-municipios-2023.csv
+
+# estos nombres se usan para cargar los esquemas y plantillas desde sus 
+# respectivos directorios
+fic_peticion: peticion # plantilla y esquema de peticion
+fic_partes: altaParteHospedaje # plantilla y esquema de partes

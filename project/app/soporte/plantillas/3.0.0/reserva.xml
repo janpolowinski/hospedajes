@@ -1,0 +1,73 @@
+<ns2:peticion xmlns:ns2="http://www.neg.hospedajes.mir.es/altaReservaHospedaje">
+  <solicitud>
+    <comunicacion>
+      <!--Ha de indicar los datos del establecimiento o bien el código de establecimiento-->
+      <establecimiento>
+        <datosEstablecimiento>
+          <tipo>PARADOR</tipo>
+          <nombre>texto</nombre>
+          <direccion>
+            <direccion>texto</direccion>
+            <direccionComplementaria>texto</direccionComplementaria>
+            <!--Código de Municipio de 5 dígitos: [07065, 07901,...]-->
+            <!--Si el país es España (ESP), el código de municipio ha de ir informado, no así el nombre del municipio-->
+            <codigoMunicipio>00000</codigoMunicipio>
+            <!--Si el país es distinto de España (ESP), ha de informar el nombre del municipio, no así el código de municipio-->
+            <nombreMunicipio>texto</nombreMunicipio>
+            <codigoPostal>00000</codigoPostal>
+            <!--País código ISO alfa-3: [ESP, ARG, ...]-->
+            <pais>ESP</pais>
+          </direccion>
+        </datosEstablecimiento>
+        <codigo>texto</codigo>
+      </establecimiento>
+      <contrato>
+        <referencia>texto</referencia>
+        <fechaContrato>2023-03-14+01:00</fechaContrato>
+        <fechaEntrada>2023-03-14T12:24:55.746+01:00</fechaEntrada>
+        <fechaSalida>2023-03-14T12:24:55.746+01:00</fechaSalida>
+        <numPersonas>1</numPersonas>
+        <numHabitaciones>1</numHabitaciones>
+        <internet>true</internet>
+        <pago>
+          <!--Tipos de pago: [DESTI, EFECT, TARJT, PLATF, TRANS, MOVIL, TREG, OTRO]-->
+          <tipoPago>EFECT</tipoPago>
+          <fechaPago>2023-03-14+01:00</fechaPago>
+          <medioPago>texto</medioPago>
+          <titular>texto</titular>
+          <fechaCaducidadTarjeta>2023-03-14+01:00</fechaCaducidadTarjeta>
+        </pago>
+      </contrato>
+      <persona>
+        <!--Roles: [VI, CP, CS, TI]-->
+        <rol>TI</rol>
+        <nombre>texto</nombre>
+        <apellido1>texto</apellido1>
+        <apellido2>texto</apellido2>
+        <!--Tipos documentos: [NIF, NIE, PAS, OTRO, CIF]-->
+        <tipoDocumento>NIF</tipoDocumento>
+        <numeroDocumento>00000000T</numeroDocumento>
+        <fechaNacimiento>2023-03-14+01:00</fechaNacimiento>
+        <!--País código ISO alfa-3: [ESP, ARG, ...]-->
+        <nacionalidad>ESP</nacionalidad>
+        <!--Sexo: [H, M, O]-->
+        <sexo>H</sexo>
+        <direccion>
+          <direccion>texto</direccion>
+          <direccionComplementaria>texto</direccionComplementaria>
+          <!--Código de Municipio de 5 dígitos: [07065, 07901,...]-->
+          <!--Si el país es España (ESP), el código de municipio ha de ir informado, no así el nombre del municipio-->
+          <codigoMunicipio>00000</codigoMunicipio>
+          <!--Si el país es distinto de España (ESP), ha de informar el nombre del municipio, no así el código de municipio-->
+          <nombreMunicipio>texto</nombreMunicipio>
+          <codigoPostal>00000</codigoPostal>
+          <!--País código ISO alfa-3: [ESP, ARG, ...]-->
+          <pais>ESP</pais>
+        </direccion>
+        <telefono>999999999</telefono>
+        <telefono2>999999999</telefono2>
+        <correo>correo@correo.es</correo>
+      </persona>
+    </comunicacion>
+  </solicitud>
+</ns2:peticion>

@@ -1,0 +1,10 @@
+pyyaml
+pydantic
+email-validator
+pytest
+arrow
+loguru
+pycountry
+jinja2
+xmlschema
+requests

@@ -1,0 +1,51 @@
+<ns2:peticion xmlns:ns2="http://www.neg.hospedajes.mir.es/altaParteHospedaje">
+    <solicitud>
+        <codigoEstablecimiento>{{solicitud.codigoEstablecimiento}}</codigoEstablecimiento>
+        {% for c in solicitud.comunicacion %}
+        <comunicacion>
+            <contrato>
+                <referencia>{{c.contrato.referencia}}</referencia>
+                {% if c.contrato.fechaContrato %}<fechaContrato>{{c.contrato.fechaContrato.strftime('%Y-%m-%d')}}</fechaContrato>{% endif %}
+                {% if c.contrato.fechaEntrada %}<fechaEntrada>{{c.contrato.fechaEntrada.strftime('%Y-%m-%dT%H:%M:%S')}}</fechaEntrada>{% endif %}
+                {% if c.contrato.fechaSalida %}<fechaSalida>{{c.contrato.fechaSalida.strftime('%Y-%m-%dT%H:%M:%S')}}</fechaSalida>{% endif %}
+                <numPersonas>{{c.contrato.numPersonas}}</numPersonas>
+                {% if c.contrato.numHabitaciones %}<numHabitaciones>{{c.contrato.numHabitaciones}}</numHabitaciones>{% endif %}
+                {% if c.contrato.internet %}<internet>{% if c.contrato.internet%}true{%else%}false{%endif%}</internet>{% endif %}
+                <pago>
+                    <tipoPago>{{c.contrato.pago.tipoPago}}</tipoPago>
+                    {% if c.contrato.pago.fechaPago %}<fechaPago>{{c.contrato.pago.fechaPago.strftime('%Y-%m-%d')}}</fechaPago>{% endif %}
+                    {% if c.contrato.pago.medioPago %}<medioPago>{{c.contrato.pago.medioPago}}</medioPago>{% endif %}
+                    {% if c.contrato.pago.titular %}<titular>{{c.contrato.pago.titular}}</titular>{% endif %}
+                    {% if c.contrato.pago.fechaCaducidadTarjeta %}<fechaCaducidadTarjeta>{{c.contrato.pago.fechaCaducidadTarjeta| strftime('%Y-%m-%d')}}</fechaCaducidadTarjeta>{% endif %}
+                </pago>
+            </contrato>
+            {% for p in c.persona %} {# para cada uno de los viajeros #}
+            <persona>
+                <rol>{{p.rol}}</rol>
+                <nombre>{{p.nombre}}</nombre>
+                <apellido1>{{p.apellido1}}</apellido1>
+                {% if p.apellido2 %}<apellido2>{{p.apellido2}}</apellido2>{% endif %}
+                {% if p.tipoDocumento %}<tipoDocumento>{{p.tipoDocumento}}</tipoDocumento>{% endif %}
+                {% if p.documento %}<numeroDocumento>{{p.documento}}</numeroDocumento>{% endif %}
+                {% if p.soporte %}<soporteDocumento>{{p.soporte}}</soporteDocumento>{% endif %}
+                <fechaNacimiento>{{p.fechaNacimiento.strftime('%Y-%m-%d')}}</fechaNacimiento>
+                {% if p.nacionalidad %}<nacionalidad>{{p.nacionalidad}}</nacionalidad>{% endif %}
+                {% if p.sexo %}<sexo>{{p.sexo}}</sexo>{% endif %}
+                <direccion>
+                    <direccion>{{p.direccion.direccion}}</direccion>
+                    {% if p.direccion.direccionComplementaria %}<direccionComplementaria>{{p.direccion.direccionComplementaria}}</direccionComplementaria>{% endif %}
+                    {% if p.direccion.codigoMunicipio %}<codigoMunicipio>{{p.direccion.codigoMunicipio}}</codigoMunicipio>{% endif %}
+                    {% if p.direccion.nombreMunicipio %}<nombreMunicipio>{{p.direccion.nombreMunicipio}}</nombreMunicipio>{% endif %}
+                    {% if p.direccion.codigoPostal %}<codigoPostal>{{p.direccion.codigoPostal}}</codigoPostal>{% endif %}
+                    {% if p.direccion.pais %}<pais>{{p.direccion.pais}}</pais>{% endif %}
+                </direccion>
+                {% if p.telefono %}<telefono>{{p.telefono}}</telefono>{% endif %}
+                {% if p.telefono2 %}<telefono2>{{p.telefono2}}</telefono2>{% endif %}
+                {% if p.correo %}<correo>{{p.correo}}</correo>{% endif %}
+                {% if p.parentesco %}<parentesco>{{p.parentesco}}</parentesco>{% endif %}
+            </persona>
+            {% endfor %} {# endfor persona #}
+        </comunicacion>
+        {% endfor %} {# endfor solicitud.comunicacion#}
+    </solicitud>
+</ns2:peticion>

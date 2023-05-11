@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  hospedajes:
+    restart: always
+    build: ./project
+    command: bash
+    stdin_open: true
+    tty: true    
+    volumes:
+      - ./project:/usr/src/app
+    ports:
+      - 8000:8000 # host/contanier
+    environment:
+      - ENVIRONMENT=dev
+      - TESTING=0
+      - LOG_LEVEL=debug
