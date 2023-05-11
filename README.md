@@ -16,18 +16,15 @@ Crear la imagen de Docker con `docker compose build` en el directorio raíz del 
 
 En la linea de comandos hacemos `cd app; source t.sh` para ejecutar los tests. 
 
-## Configuración
-
-1. En `project/app/config.yml` guardar los datos del establecimiento. 
-2. `source t.sh` para ejecutar los tests
-
 ## Uso
 
-En el directorio de tests `project/app/tests` hay un ejemplos de uso de las plantillas para crear, validar y generar los partes de hospedaje.
+En el directorio de tests hay ejemplos de uso de las plantillas para crear, validar y generar los partes de hospedaje.
 
 ## Comunicaciones con el servidor
 
 Pueden hacerse la pruebas de tipos en local y dejar las comunicaciones con el servidor para el final. 
+
+En `project/app/config.yml` guardar los datos del establecimiento. 
 
 Guardar los archivos ACCOMP.crt y PRE_SGSICS.SES.MIR.ES.cer, facilitados por la subsecretaría, en `project/app/soporte`. En el `Dockerfile` quitar las lineas comentadas que copian los archivos de certificados y recrear la imagen con `docker compose build -t hospedajes .`
 
