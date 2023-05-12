@@ -41,7 +41,7 @@ class peticionType(t.hospedajesBaseType):
             headers = {#'Content-Type': 'application/xml', 
                     'Authorization': f'Basic {get_credenciales()}'}
             
-            # headers = {'Authorization': 'Basic QTA3MDU5MDU4OlRlbXBvcmFsMQ=='}
+            
             logger.debug(f'El header es {headers}')
             #raise Exception(f'Las credenciales son {get_credenciales()}')
             logger.debug(f'Enviando petición')
