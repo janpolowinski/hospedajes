@@ -1,5 +1,5 @@
 pyyaml
-pydantic
+pydantic < 2.0
 email-validator
 pytest
 arrow

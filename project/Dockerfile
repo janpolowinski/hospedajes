@@ -23,6 +23,7 @@ COPY . .
 
 # instalamos el certificado de la ses
 # COPY app/soporte/PRE_SGSICS.SES.MIR.ES.cer /usr/local/share/ca-certificates/
+# COPY app/soporte/ACCOMP.crt /usr/local/share/ca-certificates/
 # RUN update-ca-certificates
 
 CMD ["/bin/bash"]
